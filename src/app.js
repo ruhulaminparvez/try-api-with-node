@@ -11,6 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Define API Routes
 app.use('/', defaultRoutes);
-app.use('/users', userRoutes);
+app.use('/user', userRoutes);
 
 module.exports = app;
