@@ -3,6 +3,10 @@ const app = express();
 const cors = require('cors');
 const userRoutes = require('./routes/userRoutes');
 const defaultRoutes = require('./routes/defaultRoutes');
+const connectDB = require('./config/database');
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware setup
 app.use(cors());
